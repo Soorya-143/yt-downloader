@@ -1,0 +1,11 @@
+[project]
+name = "yt-downloader-ultimate"
+version = "3.0.0"
+dependencies = ["flet==1.0.1", "yt-dlp"]
+
+[tool.flet]
+org = "com.soorya.yt"
+project = "ytultimate"
+
+[tool.flet.android]
+permissions = ["INTERNET", "WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"]
