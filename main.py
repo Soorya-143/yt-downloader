@@ -441,4 +441,8 @@ def main(page: ft.Page):
     refresh_history()
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    # Desktop: run with ft.app, Mobile: flet auto-runs main() so we skip
+    try:
+        ft.app(target=main)
+    except AttributeError:
+        pass
