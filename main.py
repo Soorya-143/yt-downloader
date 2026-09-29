@@ -441,4 +441,4 @@ def main(page: ft.Page):
     refresh_history()
 
 if __name__ == "__main__":
-    ft.run(main)
+    ft.app(target=main)

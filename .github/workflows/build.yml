@@ -17,7 +17,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Install dependencies
-        run: pip install flet==1.0.1 yt-dlp
+        run: pip install flet==0.25.2 yt-dlp
       - name: Build APK (cloud - auto-installs Flutter)
         run: flet build apk --yes --verbose
       - name: Upload APK
